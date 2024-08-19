@@ -10,7 +10,8 @@
     "clinet": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run clinet\"",
     "data:import": "node backend/seeder.js",
-    "data:destory": "node backend/seeder.js -d"
+    "data:destory": "node backend/seeder.js -d",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Shiva Jella",
   "license": "MIT",
@@ -23,6 +24,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.1",
+    "multer": "^1.4.5-lts.1",
     "react-toastify": "^10.0.5"
   },
   "devDependencies": {
